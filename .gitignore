@@ -12,14 +12,6 @@ yarn-error.log*
 **/build/
 **/.cache/
 
-# TypeScript compilation outputs
-*.js
-*.js.map
-*.d.ts
-# Keep important JS config files
-!*.config.js
-!*.config.cjs
-
 # ==============================================
 # ENVIRONMENT & SECRETS
 # ==============================================
