@@ -48,4 +48,8 @@ describe("add.js test suite", () => {
         expect(() => add(null,1)).toThrow();
         expect(() => add(undefined,1)).toThrow();
     })
+
+    it("TC010 - Add object as a parameter", () => {
+        expect(() => add(new Object(UnsignedToyotaYaris),1)).toThrow();
+    })
 })
