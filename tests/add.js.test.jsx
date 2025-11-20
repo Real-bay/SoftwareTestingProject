@@ -43,4 +43,9 @@ describe("add.js test suite", () => {
     it("TC008 - Add strings", () => {
         expect(() => add("12",1)).toThrow();
     })
+
+    it("TC009 - Add undefined/null values", () => {
+        expect(() => add(null,1)).toThrow();
+        expect(() => add(undefined,1)).toThrow();
+    })
 })
