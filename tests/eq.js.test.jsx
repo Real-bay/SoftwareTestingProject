@@ -12,4 +12,8 @@ describe("eq.js test suite", () => {
         expect(eq("1", "2")).toBe(false);
         expect(eq(new Object("1"), new Object("1"))).toBe(false);
     })
+
+    it("TC012 - Compare coercion inputs", () => {
+        expect(eq(1, "1")).toBe(true);
+    })
 })
