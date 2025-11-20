@@ -9,17 +9,17 @@ import add from "../src/add.js";
 describe("add.js test suite", () => {
 
     it("TC001 - Add two whole numbers", () => {
-        expect(add(1,1)).toBe(2);
-        expect(add(347,128)).toBe(475);
+        expect(add(1, 1)).toBe(2);
+        expect(add(347, 128)).toBe(475);
     })
 
     it("TC002 - Add two decimal numbers", () => {
-        expect(add(1.01,1)).toBe(2.01);
-        expect(add(27.00003,14.356)).toBe(41.35603);
+        expect(add(1.01, 1)).toBe(2.01);
+        expect(add(27.00003, 14.356)).toBe(41.35603);
     })
 
     it("TC003 - Add two hexadecimal numbers", () => {
-        expect(add(0xff,0xA)).toBe(0x109);
+        expect(add(0xff, 0xA)).toBe(0x109);
     })
 
     it("TC004 - Add two binary numbers", () => {
@@ -41,15 +41,15 @@ describe("add.js test suite", () => {
     })
 
     it("TC008 - Add strings", () => {
-        expect(() => add("12",1)).toThrow();
+        expect(() => add("12", 1)).toThrow();
     })
 
     it("TC009 - Add undefined/null values", () => {
-        expect(() => add(null,1)).toThrow();
-        expect(() => add(undefined,1)).toThrow();
+        expect(() => add(null, 1)).toThrow();
+        expect(() => add(undefined, 1)).toThrow();
     })
 
     it("TC010 - Add object as a parameter", () => {
-        expect(() => add(new Object(UnsignedToyotaYaris),1)).toThrow();
+        expect(() => add(new Object(UnsignedToyotaYaris), 1)).toThrow();
     })
 })
