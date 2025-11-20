@@ -34,4 +34,9 @@ describe("add.js test suite", () => {
     it("TC006 - Add two zeros", () => {
         expect(add(0, 0)).toBe(0);
     })
+
+    it("TC007 - Negative and positive infinity", () => {
+        expect(() => add(Infinity, Infinity)).toThrow();
+        expect(() => add(-Infinity, Infinity)).toThrow();
+    })
 })
