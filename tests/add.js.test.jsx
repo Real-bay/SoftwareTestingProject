@@ -30,4 +30,8 @@ describe("add.js test suite", () => {
         expect(add(-1, -1)).toBe(-2);
         expect(add(-365, 1)).toBe(-364);
     })
+
+    it("TC006 - Add two zeros", () => {
+        expect(add(0, 0)).toBe(0);
+    })
 })
