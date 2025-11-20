@@ -39,4 +39,8 @@ describe("add.js test suite", () => {
         expect(() => add(Infinity, Infinity)).toThrow();
         expect(() => add(-Infinity, Infinity)).toThrow();
     })
+
+    it("TC008 - Add strings", () => {
+        expect(() => add("12",1)).toThrow();
+    })
 })
