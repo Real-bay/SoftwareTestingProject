@@ -12,4 +12,9 @@ describe("add.js test suite", () => {
         expect(add(1,1)).toBe(2);
         expect(add(347,128)).toBe(475);
     })
+
+    it("TC002 - Add two decimal numbers", () => {
+        expect(add(1.01,1)).toBe(2.01);
+        expect(add(27.00003,14.356)).toBe(41.35603);
+    })
 })
