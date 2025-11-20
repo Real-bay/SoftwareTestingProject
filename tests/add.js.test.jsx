@@ -25,4 +25,9 @@ describe("add.js test suite", () => {
     it("TC004 - Add two binary numbers", () => {
         expect(add(0b1010, 0b101)).toBe(0b1111);
     })
+
+    it("TC005 - Add negative numbers", () => {
+        expect(add(-1, -1)).toBe(-2);
+        expect(add(-365, 1)).toBe(-364);
+    })
 })
