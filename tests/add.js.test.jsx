@@ -17,4 +17,8 @@ describe("add.js test suite", () => {
         expect(add(1.01,1)).toBe(2.01);
         expect(add(27.00003,14.356)).toBe(41.35603);
     })
+
+    it("TC003 - Add two hexadecimal numbers", () => {
+        expect(add(0xff,0xA)).toBe(0x109);
+    })
 })
