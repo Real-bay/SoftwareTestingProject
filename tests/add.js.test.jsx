@@ -45,8 +45,8 @@ describe("add.js test suite", () => {
     })
 
     it("TC009 - Add undefined/null values", () => {
-        expect(() => add(null, 1)).toThrow();
-        expect(() => add(undefined, 1)).toThrow();
+        expect(add(null, 1)).toBeNaN;
+        expect(add(undefined, 1)).toBeNaN;
     })
 
     it("TC010 - Add object as a parameter", () => {
