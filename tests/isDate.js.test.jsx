@@ -6,11 +6,11 @@ import isDate from "../src/isDate.js";
 
 describe("isDate.js - test suite", () => {
 
-    it("TC036 - returns true for Date instances", () => {
+    it("TC037 - returns true for Date instances", () => {
         expect(isDate(new Date())).toBe(true);
     });
 
-    it("TC037 - returns false for non-Date values", () => {
+    it("TC038 - returns false for non-Date values", () => {
         expect(isDate("Wed November 05 2025")).toBe(false);
         expect(isDate(12343566789)).toBe(false);
         expect(isDate({})).toBe(false);

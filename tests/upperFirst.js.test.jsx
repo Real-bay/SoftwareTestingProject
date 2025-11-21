@@ -6,15 +6,15 @@ import upperFirst from "../src/upperFirst.js";
 
 describe("upperFirst.js - test suite", () => {
 
-    it("TC033 - uppercases the first character of a lowercase word", () => {
+    it("TC034 - uppercases the first character of a lowercase word", () => {
         expect(upperFirst("tuni")).toBe("Tuni");
     });
 
-    it("TC034 - keeps fully uppercase words unchanged", () => {
+    it("TC035 - keeps fully uppercase words unchanged", () => {
         expect(upperFirst("TUNI")).toBe("TUNI");
     });
 
-    it("TC035 - returns empty string when input is empty", () => {
+    it("TC036 - returns empty string when input is empty", () => {
         expect(upperFirst("")).toBe("");
     });
 });

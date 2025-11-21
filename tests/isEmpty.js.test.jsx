@@ -6,17 +6,17 @@ import isEmpty from "../src/isEmpty.js";
 
 describe("isEmpty.js - test suite", () => {
 
-    it("TC024 - returns true for null and undefined", () => {
+    it("TC025 - returns true for null and undefined", () => {
         expect(isEmpty(null)).toBe(true);
         expect(isEmpty(undefined)).toBe(true);
     });
 
-    it("TC025 - returns false for non-empty arrays", () => {
+    it("TC026 - returns false for non-empty arrays", () => {
         expect(isEmpty(["Jyri", "Matias"])).toBe(false);
         expect(isEmpty("x")).toBe(false);
     });
 
-    it("TC026 - returns true for empty objects", () => {
+    it("TC027 - returns true for empty objects", () => {
         expect(isEmpty([])).toBe(true);
         expect(isEmpty("")).toBe(true);
         expect(isEmpty({})).toBe(true);
