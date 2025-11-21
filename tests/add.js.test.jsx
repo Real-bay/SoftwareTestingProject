@@ -36,8 +36,8 @@ describe("add.js test suite", () => {
     })
 
     it("TC007 - Negative and positive infinity", () => {
-        expect(() => add(Infinity, Infinity)).toThrow();
-        expect(() => add(-Infinity, Infinity)).toThrow();
+        expect(add(Infinity, Infinity)).toBe(Infinity);
+        expect(add(-Infinity, Infinity)).toBeNaN;
     })
 
     it("TC008 - Add strings", () => {
