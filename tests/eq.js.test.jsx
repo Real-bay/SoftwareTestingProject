@@ -20,6 +20,7 @@ describe("eq.js test suite", () => {
     it("TC013 - Compare undefined/null values", () => {
         expect(eq(null, null)).toBe(true);
         expect(eq(undefined, null)).toBe(true);
+        expect(eq(Number.NaN, Number.NaN)).toBe(true);
     })
 
     it("TC014 - Compare invalid value", () => {
