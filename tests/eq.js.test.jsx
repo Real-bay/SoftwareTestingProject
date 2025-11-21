@@ -26,4 +26,8 @@ describe("eq.js test suite", () => {
     it("TC014 - Compare invalid value", () => {
         expect(eq(Symbol("1"), 1)).toBe(false);
     })
+
+    it("TC015 - Compare object to string", () => {
+        expect(eq("a", new Object("a"))).toBe(false);
+    })
 })
