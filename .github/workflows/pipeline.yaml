@@ -26,7 +26,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - run: npm test:coverage
+      - run: npm run test:coverage
       - name: Coveralls
         uses: coverallsapp/github-action@v2
 
