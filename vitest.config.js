@@ -6,6 +6,7 @@ export default defineConfig({
       provider: 'v8',
       reporter: ['text', 'json', 'html', 'lcov'],
       include: ['src/**/*.{js,jsx}'],
+      exclude: ['src/.internal/**','tests/**', 'vitest.config.js'],
       all: true,
       reportOnFailure: true,
     },
