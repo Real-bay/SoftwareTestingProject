@@ -8,10 +8,21 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "test:coverage": "vitest run --coverage tests/"
+    "test:coverage": "vitest run --coverage tests/",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
     "@vitest/coverage-v8": "^4.0.9",
+    "coveralls": "^3.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
     "vitest": "^4.0.9"
   }
 }
