@@ -8,7 +8,11 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "test:coverage": "vitest run --coverage tests/"
+    "test:coverage": "vitest run --coverage tests/",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
