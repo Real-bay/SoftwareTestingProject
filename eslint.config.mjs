@@ -18,4 +18,9 @@ export default [
   {
     ignores: ['src/', 'build/', 'dist/', 'node_modules/'],
   },
+  {
+    rules: {
+      'linebreak-style': ['warning', 'windows'],
+    },
+  },
 ];
