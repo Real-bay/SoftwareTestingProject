@@ -20,7 +20,7 @@ export default [
   },
   {
     rules: {
-      'linebreak-style': ['warning', 'windows'],
+      'linebreak-style': ['warn', 'windows'],
     },
   },
 ];
